@@ -10,9 +10,9 @@
 
 Use : 
 
-<g:materializePagination color="blue-grey" total="${count}"/>
+`<g:materializePagination color="blue-grey" total="${count}"/>`
 
-Attrubutes accepted : it uses the same attributes as 'g:paginate' plus color.
+Attributes accepted : it uses the same attributes as 'g:paginate' plus color.
 
 color values : All the Css classes inside MaterializeCSS.
 
