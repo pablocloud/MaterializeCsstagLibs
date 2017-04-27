@@ -2,6 +2,16 @@
 
 ##### This plugin contains TagLibs to use with MaterializeCSS as the FrontEnd CSS Framework.
 
+`
+maven {
+    url  "http://dl.bintray.com/pablocloud/plugins" 
+}
+`
+
+`
+    compile 'com.pabloverdugo:MaterializeCsstagLibs:0.0.2'
+`
+
 ### Current Features
 
 ---
