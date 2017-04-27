@@ -10,7 +10,7 @@
 
 Use : 
 
-`<g:materializePagination color="blue-grey" total="${count}"/>`
+`<g:materializePagination color="" total=""/>`
 
 Attributes accepted : it uses the same attributes as 'g:paginate' plus color.
 
@@ -18,4 +18,16 @@ color values : All the Css classes inside MaterializeCSS.
 
 ---
 
-TODO : Cards, Tables, Collections...
+#### Cards
+
+Use : 
+
+Without image : 
+
+` <g:materializeCard itemId="" controller="" itemLinkText="" action="" text=""/>`
+
+With image : 
+
+`<g:materializeCardImage itemId="" img="" controller="" itemLinkText="" action="" text=""`
+
+TODO : Tables, Collections...
