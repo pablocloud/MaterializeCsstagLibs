@@ -2,6 +2,17 @@ package materializecsstaglibs
 
 class MaterializeCollectionTagLib {
 
+    /**
+     * Creates a list collection
+     *
+     * &lt;g:materializeCollection header="header" ids="ids" data="data"/&gt;<br/>
+     *
+     * @attr header
+     * @attr ids REQUIRED
+     * @attr data REQUIRED
+     * @attr controller REQUIRED
+     * @attr action REQUIRED
+     */
     def materializeCollection = { Map attrsMap ->
         def str = ''
         if (attrsMap.header) {
@@ -10,8 +21,8 @@ class MaterializeCollectionTagLib {
         } else {
             str += '<div class="collection">'
         }
-        attrsMap.data.each {
-            str += '<a href="#" class="collection-item">' + it.toString() + '</a>'
+        for (int i = 0; i < attrsMap.data.size(); i++) {
+            str += '<a href="/' + attrsMap.controller.toString() + '/' + attrsMap.action.toString() + '/' + attrsMap.ids[i] + '" class="collection-item">' + attrsMap.data[i].toString() + '</a>'
         }
         str += '</div>'
         out << str
