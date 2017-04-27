@@ -40,12 +40,13 @@ class MaterializeCardTagLib {
     /**
      * Creates a simple card for MaterializeCss<br/>
      *
-     * &lt;g:materializeCard title="title" text="text" img="img" controller="controller" action="action" itemId="itemId" itemLinkText="itemLinkText" /&gt;<br/>
+     * &lt;g:materializeCard title="title" img="img" text="text" img="img" controller="controller" action="action" itemId="itemId" itemLinkText="itemLinkText" /&gt;<br/>
      *
      * @emptyTag
      *
      * @attr horizontal
      * @attr title
+     * @attr img REQUIRED
      * @attr text REQUIRED
      * @attr itemId REQUIRED
      * @attr controller REQUIRED
