@@ -74,6 +74,6 @@
             </div>
         </section>
     </div>
-
+<g:materializeCollection data="['1','2','3']"/>
 </body>
 </html>

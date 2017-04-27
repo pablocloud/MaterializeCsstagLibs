@@ -19,9 +19,9 @@ class MaterializeCardTagLib {
      * */
     def materializeCard = { Map attrsMap ->
         def str = ''
-        if(attrsMap.horizontal.toString() == 'true'){
+        if (attrsMap.horizontal.toString() == 'true') {
             str += '<div class="card horizontal">'
-        }else{
+        } else {
             str += '<div class="card">'
         }
             str += '<div class="card-content">'
@@ -55,9 +55,9 @@ class MaterializeCardTagLib {
      * */
     def materializeCardImage = { Map attrsMap ->
         def str = ''
-        if(attrsMap.horizontal.toString() == 'true'){
+        if (attrsMap.horizontal.toString() == 'true') {
             str += '<div class="card horizontal">'
-        }else{
+        } else {
             str += '<div class="card">'
         }
             str += '<div class="card-image">'
