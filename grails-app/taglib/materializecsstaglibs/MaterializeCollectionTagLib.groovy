@@ -5,7 +5,9 @@ class MaterializeCollectionTagLib {
     /**
      * Creates a list collection
      *
-     * &lt;g:materializeCollection header="header" ids="ids" data="data"/&gt;<br/>
+     * &lt;g:materializeCollection header="header" controller="controller" action="action" ids="ids" data="data"/&gt;<br/>
+     *
+     * @emptyTag
      *
      * @attr header
      * @attr ids REQUIRED
