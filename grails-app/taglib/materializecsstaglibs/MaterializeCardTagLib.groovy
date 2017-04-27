@@ -25,7 +25,7 @@ class MaterializeCardTagLib {
             str += '<div class="card">'
         }
             str += '<div class="card-content">'
-                if (attrsMap.hasProperty('title')) {
+                if (attrsMap.title) {
                     str += '<span class="card-title truncate">' + attrsMap.title.toString() + '</span>'
                 }
                 str += '<p class="truncate">' + attrsMap.text.toString() + '</p>'
@@ -62,7 +62,7 @@ class MaterializeCardTagLib {
         }
             str += '<div class="card-image">'
                 str += '<img src="' + attrsMap.img.toString() + '">'
-            if (attrsMap.hasProperty('title')) {
+            if (attrsMap.title) {
                 str += '<span class="card-title truncate">' + attrsMap.title.toString() + '</span>'
             }
             str += '</div>'
